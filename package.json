@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "dependencies": {
-    "framer-motion": "^7.6.7",
+    "framer-motion": "^7.10.3",
     "next": "13.4.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
@@ -14,9 +14,9 @@
     "start": "next start"
   },
   "devDependencies": {
+    "@tailwindcss/postcss": "^4.1.8",
     "autoprefixer": "^10.4.21",
     "postcss": "^8.5.4",
-    "tailwindcss": "^4.1.8",
-    "@tailwindcss/postcss": "^4.1.8"
+    "tailwindcss": "^4.1.8"
   }
 }
