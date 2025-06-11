@@ -53,11 +53,7 @@ export default function LandingPage() {
           animate={{ opacity: 1 }}
           transition={{ delay: 0.6, duration: 0.8 }}
         >
-          Welcome to the future of explainable, ethical AI. Neuralic is a modular
-          intelligence framework built for organizations that demand transparency,
-          accountability, and absolute control over their AI decisions. Engineered
-          with precision and wrapped in a synthwave aesthetic, Neuralic fuses
-          nostalgic digital rebellion with cutting-edge reasoning systems.
+          Welcome to the future of explainable, ethical AI. Neuralic is a modular intelligence framework built for organizations that demand transparency, accountability, and absolute control over their AI decisions. Engineered with precision and wrapped in a synthwave aesthetic, Neuralic fuses nostalgic digital rebellion with cutting-edge reasoning systems.
         </motion.p>
         <motion.p
           className="text-lg mt-6 max-w-3xl mx-auto text-purple-200"
@@ -65,8 +61,7 @@ export default function LandingPage() {
           animate={{ opacity: 1 }}
           transition={{ delay: 1.2, duration: 0.8 }}
         >
-          From decision traceability to audit integrity, Neuralic empowers you to
-          not just use AI — but understand it.
+          From decision traceability to audit integrity, Neuralic empowers you to not just use AI — but understand it.
         </motion.p>
       </header>
 
@@ -129,10 +124,7 @@ export default function LandingPage() {
           Every machine makes decisions. Neuralic Xplain tells you why.
         </h2>
         <p className="text-purple-200">
-          With built-in natural language explainability, Neuralic Xplain bridges
-          the gap between technical output and human understanding. Whether
-          you’re a compliance officer, data analyst, or executive, Xplain ensures
-          that no reasoning remains a black box.
+          With built-in natural language explainability, Neuralic Xplain bridges the gap between technical output and human understanding. Whether you’re a compliance officer, data analyst, or executive, Xplain ensures that no reasoning remains a black box.
         </p>
       </motion.div>
 
