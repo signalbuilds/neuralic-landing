@@ -58,8 +58,37 @@ export default function LandingPage() {
         ))}
       </section>
 
-      <footer className="mt-24 text-center text-sm text-purple-400">
-        © {new Date().getFullYear()} Neuralic by SignalBuilds. Crafted for explainable AI.
+      <footer className="mt-24 text-sm text-purple-400">
+        <div className="grid gap-8 text-center sm:grid-cols-3">
+          <div>
+            <h3 className="font-semibold text-purple-200 mb-2">Navigate</h3>
+            <ul className="space-y-1">
+              <li><a href="#" className="hover:text-pink-300">Home</a></li>
+              <li><a href="#" className="hover:text-pink-300">Features</a></li>
+              <li><a href="#" className="hover:text-pink-300">Documentation</a></li>
+              <li><a href="#" className="hover:text-pink-300">Pricing</a></li>
+              <li><a href="#" className="hover:text-pink-300">About Us</a></li>
+              <li><a href="#" className="hover:text-pink-300">Contact</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3 className="font-semibold text-purple-200 mb-2">Legal</h3>
+            <ul className="space-y-1">
+              <li><a href="#" className="hover:text-pink-300">Privacy Policy</a></li>
+              <li><a href="#" className="hover:text-pink-300">Terms of Service</a></li>
+              <li className="text-xs">No License – © 2025 SignalBuilds / Neuralic Team</li>
+            </ul>
+          </div>
+          <div>
+            <h3 className="font-semibold text-purple-200 mb-2">Follow Us</h3>
+            <ul className="space-y-1">
+              <li><a href="#" className="hover:text-pink-300">LinkedIn</a></li>
+              <li><a href="#" className="hover:text-pink-300">X (Twitter)</a></li>
+              <li><a href="#" className="hover:text-pink-300">GitHub</a></li>
+            </ul>
+          </div>
+        </div>
+        <p className="mt-8 text-center">© 2025 SignalBuilds / Neuralic Team</p>
       </footer>
 
       <style jsx>{`
