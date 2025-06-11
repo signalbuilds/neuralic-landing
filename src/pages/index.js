@@ -37,7 +37,7 @@ const modules = [
 
 export default function LandingPage() {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-purple-900 via-indigo-800 to-gray-900 text-white font-sans px-6 py-12">
+    <div className="min-h-screen bg-gradient-to-br from-purple-900 via-indigo-800 to-gray-900 text-white font-sans px-6 sm:px-10 lg:px-20 py-12 max-w-screen-xl mx-auto box-border">
       <header className="text-center mb-12">
         <motion.h1
           className="text-5xl font-bold tracking-wide neon-text drop-shadow-lg"
