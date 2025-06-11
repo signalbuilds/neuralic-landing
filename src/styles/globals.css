@@ -7,3 +7,7 @@ body {
   background: linear-gradient(135deg, #340058, #561776 45%, #b83280);
   color: #ffffff;
 }
+
+* {
+  box-sizing: border-box;
+}
