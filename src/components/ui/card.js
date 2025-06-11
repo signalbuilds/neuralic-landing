@@ -1,6 +1,6 @@
 export function Card({ children, className = "" }) {
   return (
-    <div className={`rounded-2xl border border-pink-400/20 bg-gradient-to-br from-pink-500/10 to-indigo-400/10 backdrop-blur shadow-xl ${className}`}>
+    <div className={`rounded-2xl border border-pink-400/20 bg-gradient-to-br from-pink-500/10 to-indigo-400/10 backdrop-blur shadow-2xl ${className}`}>
       {children}
     </div>
   );

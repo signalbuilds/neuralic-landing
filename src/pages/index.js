@@ -37,7 +37,7 @@ const modules = [
 
 export default function LandingPage() {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-purple-900 via-indigo-800 to-gray-900 text-white font-sans px-6 sm:px-10 lg:px-20 py-12 max-w-screen-xl mx-auto box-border">
+    <div className="min-h-screen bg-gradient-to-br from-purple-900 via-indigo-800 to-gray-900 text-white font-sans p-10 sm:p-16 lg:p-24 max-w-screen-xl mx-auto">
       <header className="text-center mb-12">
         <motion.h1
           className="text-5xl font-bold tracking-wide neon-text drop-shadow-lg"
@@ -65,27 +65,29 @@ export default function LandingPage() {
         </motion.p>
       </header>
 
-      <motion.div
-        className="max-w-3xl mx-auto text-center text-purple-200 mb-16"
-        initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1 }}
-        viewport={{ once: true }}
-        transition={{ duration: 0.8 }}
-      >
-        <h2 className="text-3xl font-bold neon-text mb-4">Why Neuralic?</h2>
-        <p className="mb-4">
-          In a world where AI systems grow more complex and opaque, Neuralic brings the light.
-        </p>
-        <p className="mb-4">
-          Born out of a need for <strong>auditability</strong>, <strong>modular governance</strong>, and
-          <strong>enterprise-scale explainability</strong>, Neuralic is your command center for intelligent decision systems.
-          Every module is pluggable. Every outcome is traceable. Every action is accountable.
-        </p>
-        <p>This is not just governance. This is AI with a soul.</p>
-      </motion.div>
+      <section className="text-center mb-12">
+        <motion.div
+          className="max-w-3xl mx-auto text-purple-200"
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.8 }}
+        >
+          <h2 className="text-3xl font-bold neon-text mb-4">Why Neuralic?</h2>
+          <p className="mb-4">
+            In a world where AI systems grow more complex and opaque, Neuralic brings the light.
+          </p>
+          <p className="mb-4">
+            Born out of a need for <strong>auditability</strong>, <strong>modular governance</strong>, and
+            <strong>enterprise-scale explainability</strong>, Neuralic is your command center for intelligent decision systems.
+            Every module is pluggable. Every outcome is traceable. Every action is accountable.
+          </p>
+          <p>This is not just governance. This is AI with a soul.</p>
+        </motion.div>
+      </section>
 
       <motion.section
-        className="grid gap-6 sm:grid-cols-2 md:grid-cols-3"
+        className="grid gap-6 sm:grid-cols-2 md:grid-cols-3 my-12"
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true }}
@@ -113,38 +115,40 @@ export default function LandingPage() {
         ))}
       </motion.section>
 
-      <motion.div
-        className="max-w-2xl mx-auto mt-16 text-center"
-        initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1 }}
-        viewport={{ once: true }}
-        transition={{ duration: 0.8 }}
-      >
-        <h2 className="text-3xl font-bold neon-text mb-4">
-          Every machine makes decisions. Neuralic Xplain tells you why.
-        </h2>
-        <p className="text-purple-200">
-          With built-in natural language explainability, Neuralic Xplain bridges the gap between technical output and human understanding. Whether you’re a compliance officer, data analyst, or executive, Xplain ensures that no reasoning remains a black box.
-        </p>
-      </motion.div>
+      <section className="max-w-3xl mx-auto my-12">
+        <motion.div
+          className="max-w-2xl mx-auto text-center"
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.8 }}
+        >
+          <h2 className="text-3xl font-bold neon-text mb-4">
+            Every machine makes decisions. Neuralic Xplain tells you why.
+          </h2>
+          <p className="text-purple-200">
+            With built-in natural language explainability, Neuralic Xplain bridges the gap between technical output and human understanding. Whether you’re a compliance officer, data analyst, or executive, Xplain ensures that no reasoning remains a black box.
+          </p>
+        </motion.div>
 
-      <motion.div
-        className="max-w-3xl mx-auto mt-16"
-        initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1 }}
-        viewport={{ once: true }}
-        transition={{ duration: 0.8, delay: 0.2 }}
-      >
-        <h3 className="text-2xl font-bold neon-text mb-4 text-center">
-          Neuralic Trace – Every Decision Has a Trail
-        </h3>
-        <ul className="list-disc list-inside space-y-2 text-purple-200">
-          <li>Step-by-step reasoning chain – See how inputs transformed into outputs.</li>
-          <li>Timestamps for every logic step – Audit events in sequence.</li>
-          <li>Clickable graph views – Zoom into decision nodes, highlight rule execution paths.</li>
-          <li>Immutable trail storage – Tamper-proof records to support audits and compliance.</li>
-        </ul>
-      </motion.div>
+        <motion.div
+          className="mt-16"
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.8, delay: 0.2 }}
+        >
+          <h3 className="text-2xl font-bold neon-text mb-4 text-center">
+            Neuralic Trace – Every Decision Has a Trail
+          </h3>
+          <ul className="list-disc list-inside space-y-2 text-purple-200">
+            <li>Step-by-step reasoning chain – See how inputs transformed into outputs.</li>
+            <li>Timestamps for every logic step – Audit events in sequence.</li>
+            <li>Clickable graph views – Zoom into decision nodes, highlight rule execution paths.</li>
+            <li>Immutable trail storage – Tamper-proof records to support audits and compliance.</li>
+          </ul>
+        </motion.div>
+      </section>
 
       <footer className="mt-24 text-sm text-purple-400">
         <div className="grid gap-8 text-center sm:grid-cols-3">
